@@ -1,4 +1,4 @@
-# Run Tailscale on Render
+# Run Headscale on Render
 
 [Tailscale](https://tailscale.com) is a zero-config VPN service built on top of [Wireguard](https://www.wireguard.com/). It's great for accessing devices and applications behind firewalls, and you can use it to connect to all your private services on Render with this repo.
 
@@ -10,7 +10,7 @@ A Tailscale [subnet router](https://tailscale.com/kb/1019/subnets/) acts as a ga
 
 Use the button below to deploy a Tailscale subnet router on Render. [Generate a Tailscale auth key](https://login.tailscale.com/admin/settings/authkeys) and enter it when prompted. Use a one-off key for maximum security.
 
-<a href="https://render.com/deploy?repo=https://github.com/render-examples/tailscale/tree/main">
+<a href="https://render.com/deploy?repo=https://github.com/shift/render-headscale/tree/main">
   <img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
 </a>
 

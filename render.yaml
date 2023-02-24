@@ -5,7 +5,7 @@ services:
     autoDeploy: false
     envVars:
       - key: TAILSCALE_LOGIN_SERVER
-      - sync: false
+        sync: false
       - key: TAILSCALE_AUTHKEY
         sync: false
       - key: TAILSCALE_VERSION

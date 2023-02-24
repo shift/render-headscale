@@ -4,7 +4,7 @@
 PID=$!
 
 ADVERTISE_ROUTES=${ADVERTISE_ROUTES:-10.0.0.0/8}
-until /render/tailscale up --authkey="${TAILSCALE_AUTHKEY}" --hostname="${RENDER_SERVICE_NAME}" --advertise-routes="$ADVERTISE_ROUTES"; do
+until /render/tailscale up --login-server="${TAILSCALE_LOGIN_SERVER}" --authkey="${TAILSCALE_AUTHKEY}" --hostname="${RENDER_SERVICE_NAME}" --advertise-routes="$ADVERTISE_ROUTES"; do
   sleep 0.1
 done
 export ALL_PROXY=socks5://localhost:1055/

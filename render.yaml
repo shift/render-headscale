@@ -1,5 +1,6 @@
 services:
   - type: worker
+    region: frankfurt
     name: render-subnet-router
     env: docker
     autoDeploy: false
